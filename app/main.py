@@ -19,5 +19,5 @@ def main_page(request: Request):
 if __name__ == '__main__':
     uvicorn.run(
         app,
-        host='0.0.0.0',
+        host='185.251.91.192',
     )
