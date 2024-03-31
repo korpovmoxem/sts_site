@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Компания</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- google fonts -->
+
+    <!-- Css link -->
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <link href="{{ url_for('static', path='/css/font-awesome.min.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/owl.carousel.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/owl.transitions.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/animate.min.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/lightbox.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/bootstrap.min.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/preloader.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/image.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/icon.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/style.css') }}" rel=stylesheet>
+    <link href="{{ url_for('static', path='/css/responsive.css') }}" rel=stylesheet>
+
+  <!--
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.transitions.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/preloader.css" />
+    <link rel="stylesheet" href="css/image.css" />
+    <link rel="stylesheet" href="css/icon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    -->
+  </head>
+  <body id="top">
+    /*
+    <header id="navigation" class="navbar-fixed-top animated-header">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- responsive nav button -->
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- /responsive nav button -->
+
+          <!-- logo -->
+          <h1 class="navbar-brand">
+            <a href="index.html"
+              ><img
+                src="{{ url_for('static', path='/img/STS_logo.png') }}"
+                height="60"
+                width="100"
+                alt=" Логотип компании"
+            /></a>
+          </h1>
+          <!-- /logo -->
+        </div>
+        <nav class="collapse navbar-collapse navbar-right" role="navigation">
+          <ul id="nav" class="nav navbar-nav menu">
+            <li class="active"><a href="#!">Главная</a></li>
+            <li><a href="#!">О компании</a></li>
+            <li><a href="#!">Продукция</a></li>
+            <li><a href="#!">Услуги</a></li>
+            <li><a href="#!">Металлоизделия</a></li>
+            <li><a href="#!">Контакты</a></li>
+            <li>
+              <a href="tel:1234567890" class="icon-link">
+                <i class="fa fa-phone"></i>
+                Позвонить
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="icon-link">
+                <i class="fa fa-envelope"></i>
+                Написать
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <section id="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block">
+                <h1 class="banner-h1">
+                  Достигая вершин прочности с огнеупорными анкерами и скоростной
+                  дуговой сваркой
+                </h1>
+                <h2>
+                  Мы предлагаем широкий ассортимент строительных материалов и
+                  оборудования. <br />
+                  Наши продукты обеспечивают надежность, эффективность и
+                  долговечность ваших производственных процессов.
+                </h2>
+                <div class="buttons">
+                  <a href="#products" class="btn btn-learn">Продукция</a>
+                  <a href="#services" class="btn btn-learn">Услуги</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scrolldown">
+          <a id="scroll" href="#company" class="scroll"></a>
+        </div>
+      </section>
+      <section id="company">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title">
+                <h2>О компании</h2>
+                <p>
+                  Наша компания специализируется на производстве огнеупорных
+                  анкеров для различных отраслей промышленности, <br />
+                  в основном нефтехимической, цементной, химической, для
+                  строительства печей и судостроения.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-xs-6 col-sm-6">
+              <div class="feature-block text-center">
+                <div class="icon-box">
+                  <i class="glyphicon glyphicon-ok"></i>
+                </div>
+                <h4 class="wow fadeInUp" data-wow-delay=".3s">
+                  Полный контроль качества
+                </h4>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Мы контролируем всю цепочку производства – от приобретения
+                  сырья до упаковки и последующей доставки к вашему месту
+                  нахождения.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 col-sm-6">
+              <div class="feature-block text-center">
+                <div class="icon-box">
+                  <i class="glyphicon glyphicon-pencil"></i>
+                </div>
+                <h4 class="wow fadeInUp" data-wow-delay=".3s">
+                  Проектирование
+                </h4>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Благодаря нашему внутреннему отделу проектирования мы имеем
+                  возможность проектировать новые типы анкеров, разрабатывать
+                  наши собственные специальные инструменты и совершенствовать
+                  наше оборудование.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 col-sm-6">
+              <div class="feature-block text-center">
+                <div class="icon-box">
+                  <i class="glyphicon glyphicon-plane"></i>
+                </div>
+                <h4 class="wow fadeInUp" data-wow-delay=".3s">
+                  Быстрая поставка
+                </h4>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Мы можем выполнить производство в течение 24 часов благодаря
+                  нашему: Географическому положению: недалеко от Роттердама,
+                  Схипхола и Антверпена, Большому запасу сырьевых материалов.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="company-facts">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h2>Немного фактов</h2>
+              <p>
+                Являясь лидером в области огнеупорных анкерных систем, мы можем
+                общаться с вами на голландском, английском, <br />
+                русском, французском, немецком, итальянском, португальском и
+                испанском языках.
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="block wow fadeInRight" data-wow-delay=".3s">
+                <i class="glyphicon glyphicon-file"></i>
+                <p class="count-text">
+                  <span class="counter-digit">900 </span> +
+                </p>
+                <p>Заключенных контрактов</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="block wow fadeInRight" data-wow-delay=".5s">
+                <i class="glyphicon glyphicon-shopping-cart"></i>
+                <p class="count-text">
+                  <span class="counter-digit">7000 </span> +
+                </p>
+                <p>Проданых товаров</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="block wow fadeInRight" data-wow-delay=".7s">
+                <i class="glyphicon glyphicon-user"></i>
+                <p class="count-text">
+                  <span class="counter-digit">100%</span>
+                </p>
+                <p>Довольных покупателей</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="block wow fadeInRight" data-wow-delay=".9s">
+                <i class="glyphicon glyphicon-time"></i>
+                <p class="count-text">
+                  <span class="counter-digit">10</span> лет
+                </p>
+                <p>На рынке</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title">
+                <h2>Наша продукция</h2>
+                <p>
+                  Мы производим все стандартные изделия, которые можно найти на
+                  рынке, <br />
+                  а также изделия особой конструкции по запросу заказчика.
+                </p>
+              </div>
+              <div id="products-post" class="owl-carousel">
+                <div>
+                  <div class="block">
+                    <img
+                      width="370px"
+                      height="228px"
+                      src="{{ url_for('static', path='/img/anchor-brick.jpg') }}"
+                      alt=""
+                      class="img-responsive"
+                    />
+                    <div class="content">
+                      <h4>
+                        <a href="#!"
+                          >Анкеры для огнеупорных кирпичных футеровок</a
+                        >
+                      </h4>
+                      <p>
+                        Мы разрабатываем и производим многочисленные типы
+                        анкеров для кирпичных футеровок – от захватов до
+                        консолей. Наш широкий ассортимент инструментов, машин и
+                        оборудования собственного изготовления позволяет нам
+                        удовлетворять ваши.
+                      </p>
+                      <a href="#!" class="btn btn-read">Узнать больше</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="block">
+                    <img
+                      width="370px"
+                      height="228px"
+                      src="{{ url_for('static', path='/img/welding-equipment.jpg') }}"
+                      alt=""
+                      class="img-responsive"
+                    />
+                    <div class="content">
+                      <h4>
+                        <a href="#!"
+                          >Сварочное оборудование(сварочные инверторы, сварочные
+                          полуавтоматы)</a
+                        >
+                      </h4>
+                      <p>
+                        Сварочное оборудование позволяет быстро и надежно
+                        соединить металлические детали, в зависимости от
+                        технологии (ММА, MIG/MAG), формируется прочный сварной
+                        шов или сварная точка. Технологии сварки при помощи
+                        сварочных автоматов ELOTOP
+                      </p>
+                      <a href="#!" class="btn btn-read">Узнать больше</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="block">
+                    <img
+                      width="370px"
+                      height="228px"
+                      src="{{ url_for('static', path='/img/anchor-ceramics.jpg') }}"
+                      alt=""
+                      class="img-responsive"
+                    />
+                    <div class="content">
+                      <h4>
+                        <a href="#!"
+                          >Анкеры для футеровок из керамического волокна</a
+                        >
+                      </h4>
+                      <p>
+                        Одним из материалов, который быстро набирает
+                        популярность, является керамическое волокно для
+                        сохранения тепла на участках термоизоляции, модулях и
+                        панельных формах.Эти термостойкие волокна обеспечивают
+                        экономию топлива.
+                      </p>
+                      <a href="#!" class="btn btn-read">Узнать больше</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="block">
+                    <img
+                      width="370px"
+                      height="228px"
+                      src="{{ url_for('static', path='/img/anchor-double.jpg') }}"
+                      alt=""
+                      class="img-responsive"
+                    />
+                    <div class="content">
+                      <h4>
+                        <a href="#!"
+                          >Жаропрочные анкеры для двойных футеровок</a
+                        >
+                      </h4>
+                      <p>
+                        Усложнение футеровочной структуры вызвано колоссальными
+                        рабочими температурами ряда печей, а также стремлением к
+                        рациональному расходованию энергии. Чаще всего совмещают
+                        футеровку горячей зоны, где применяют материалы высокой
+                        плотности.
+                      </p>
+                      <a href="#!" class="btn btn-read">Узнать больше</a>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="block">
+                    <img
+                      width="370px"
+                      height="228px"
+                      src="{{ url_for('static', path='/img/anchor-single.jpg') }}"
+                      alt=""
+                      class="img-responsive"
+                    />
+                    <div class="content">
+                      <h4>
+                        <a href="#!"
+                          >Анкеры для однослойной футеровки бетоном</a
+                        >
+                      </h4>
+                      <p>
+                        Все модели могут производиться в рифленом виде или со
+                        специальной формой для исключи-тельной удерживающей
+                        способности. Компания SILICON может производить анкеры
+                        для использования в рамках технологии приваривания
+                        шпилек.
+                      </p>
+                      <a href="#!" class="btn btn-read">Узнать больше</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="downloadTheCatalog">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block">
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">
+                  Каталог продукции
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Вы можете скачать каталог продукции и озакомиться со всеми
+                  товарами, <br />
+                  которые находятся у нас в наличии
+                </p>
+                <a href="#!" class="" data-width="800" data-height="400">
+                  <button class="btn btn-warning text-uppercase">
+                    <i class="fa fa-download"></i> Скачать
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h2>Наши Услуги</h2>
+              <p>
+                В этом разделе вы можете ознакомиться со всеми услугами нашей
+                компании, которые мы предоставляем
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <div class="block wow fadeInLeft" data-wow-delay=".3s">
+                <div class="servise-img"></div>
+                <div class="team-overlay">
+                  <h3>Приварка</h3>
+                  <span class="icon"><i class="ion-quote"></i></span>
+                  <p>
+                    Наши аппараты RAW могут приваривать практически все типы
+                    сплавов на основе черных металлов, никеля, нержавеющей стали
+                    или кобальта к черным металлам любого типа и наоборот.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <div class="block wow fadeInLeft" data-wow-delay=".6s">
+                <div class="servise-img"></div>
+                <div class="team-overlay">
+                  <h3>Приварка</h3>
+                  <span class="icon"><i class="ion-quote"></i></span>
+                  <p>
+                    Наши аппараты RAW могут приваривать практически все типы
+                    сплавов на основе черных металлов, никеля, нержавеющей стали
+                    или кобальта к черным металлам любого типа и наоборот.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-6">
+              <div class="block wow fadeInLeft" data-wow-delay=".9s">
+                <div class="servise-img"></div>
+                <div class="team-overlay">
+                  <h3>Приварка</h3>
+                  <span class="icon"><i class="ion-quote"></i></span>
+                  <p>
+                    Наши аппараты RAW могут приваривать практически все типы
+                    сплавов на основе черных металлов, никеля, нержавеющей стали
+                    или кобальта к черным металлам любого типа и наоборот.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="metalProducts">
+        <div class="container">
+          <div class="row">
+            <div class="title">
+              <h2>Металлоизделия</h2>
+              <p>
+                Изготавливаем металлоконструкции нестандартных размеров, а также
+                по вашим чертежам и размерам. <br />
+                Создаём надежные и функциональные решения, точно соответствующие
+                вашим потребностям и стандартам.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="{{ url_for('static', path='/img/make-details.jpg') }}"
+                  alt="Card Image"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Изготовление</h5>
+                  <p class="card-text">
+                    Принимаем заказы на изготовление металлоизделий: пластины,
+                    закладные детали, элементы из металла, заготовок из
+                    арматурной стали и пр.
+                  </p>
+                  <a href="#!" class="btn btn-warning">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="{{ url_for('static', path='/img/rezka-lista.jpeg') }}"
+                  alt="Card Image"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Плазменная резка</h5>
+                  <p class="card-text">
+                    Высокая производительность и точность резки. Разработка
+                    индивидуальных чертежей для дальнейшей резки металла.
+                    Возможность работы с любой толщиной.
+                  </p>
+                  <a href="#!" class="btn btn-warning">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <img
+                  src="{{ url_for('static', path='/img/gibka.webp') }}"
+                  alt="Card Image"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Гибка металла</h5>
+                  <p class="card-text">
+                    Воздушная, ротационная, ступенчатая, валковая гибка, нижнее
+                    прессование, чеканка, воздействие с вытеснением. Гибка
+                    листов, труб, профиля.
+                  </p>
+                  <a href="#!" class="btn btn-warning">Узнать больше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3 class="footer-h3">Контакты</h3>
+              <p>
+                196000, Санкт-Петербург, Расстанный проезд 27, Территория завода
+                "ЭМЗ
+              </p>
+              <p>Телефон: <a href="tel:+78123395470">+7 (812) 339-54-70</a></p>
+              <p>
+                Почта:
+                <a href="mailto:info@silicongroup.ru">info@silicongroup.ru</a>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="footer-h3">Навигация</h3>
+              <ul class="footer-ul">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="footer-h3">Социальные сети</h3>
+              <div class="social-icons">
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-vk"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- load Js -->
+    <script src="{{ url_for('static', path='/js/jquery-1.11.3.min.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/bootstrap.min.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/waypoints.min.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/lightbox.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/jquery.counterup.min.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/owl.carousel.min.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/html5lightbox.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/jquery.mixitup.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/wow.min.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/jquery.scrollUp.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/jquery.sticky.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/jquery.nav.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/main.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/owl.carousel.min.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/html5lightbox.js') }}" rel=stylesheet></script>
+    <script src="{{ url_for('static', path='/js/js.js') }}" rel=stylesheet></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+    <!--
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/html5lightbox.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.scrollUp.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/js.js"></script>
+    -->
+  </body>
+</html>
